@@ -6,7 +6,7 @@ const Navbar = () => {
     const lists = [
         <li><NavLink>Home</NavLink></li>,
         <li><NavLink>Donation</NavLink></li>,
-        <li><NavLink>Campaigns</NavLink></li>,
+        <li><NavLink to='/donation'>Campaigns</NavLink></li>,
         <li><NavLink>How To Help</NavLink></li>,
         <li><NavLink>Dashboard</NavLink></li>,
         

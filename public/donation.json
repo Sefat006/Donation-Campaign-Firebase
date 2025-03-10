@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "title": "Food for Families",
+      "image": "https://example.com/images/food-donation.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Ongoing",
+      "contactInfo": "contact@charityfood.org",
+      "division": "Dhaka"
+    },
+    {
+      "id": 2,
+      "title": "Winter Clothing Drive",
+      "image": "https://example.com/images/clothing-donation.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Ongoing",
+      "contactInfo": "support@warmclothes.org",
+      "division": "Chattogram"
+    },
+    {
+      "id": 3,
+      "title": "Education for All",
+      "image": "https://example.com/images/education-donation.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Completed",
+      "contactInfo": "info@edu4all.org",
+      "division": "Rajshahi"
+    },
+    {
+      "id": 4,
+      "title": "Emergency Medical Aid",
+      "image": "https://example.com/images/medical-aid.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Ongoing",
+      "contactInfo": "healthcare@medicalaid.org",
+      "division": "Khulna"
+    },
+    {
+      "id": 5,
+      "title": "Clean Water Project",
+      "image": "https://example.com/images/clean-water.jpg",
+      "description": "ILorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Upcoming",
+      "contactInfo": "water@cleanwater.org",
+      "division": "Sylhet"
+    },
+    {
+      "id": 6,
+      "title": "Tree Plantation Initiative",
+      "image": "https://example.com/images/tree-plantation.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Ongoing",
+      "contactInfo": "eco@greenearth.org",
+      "division": "Barishal"
+    },
+    {
+      "id": 7,
+      "title": "Support for Orphans",
+      "image": "https://example.com/images/orphan-support.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Ongoing",
+      "contactInfo": "help@orphancare.org",
+      "division": "Mymensingh"
+    },
+    {
+      "id": 8,
+      "title": "Disaster Relief Fund",
+      "image": "https://example.com/images/disaster-relief.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet..",
+      "status": "Completed",
+      "contactInfo": "relief@disasterhelp.org",
+      "division": "Rangpur"
+    },
+    {
+      "id": 9,
+      "title": "Health Checkup Camps",
+      "image": "https://example.com/images/health-checkup.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet..",
+      "status": "Ongoing",
+      "contactInfo": "health@checkup.org",
+      "division": "Dhaka"
+    },
+    {
+      "id": 10,
+      "title": "Shelter for Homeless",
+      "image": "https://example.com/images/homeless-shelter.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro libero quo eveniet corrupti sit ipsum, at inventore voluptatibus obcaecati, impedit error ullam et velit officia, quae recusandae quas animi quasi nam voluptatum ipsa. Ut velit animi facilis, amet dolorem reprehenderit nesciunt praesentium, laboriosam deserunt odio accusamus veritatis itaque asperiores tenetur, illum incidunt libero? Provident nesciunt voluptas perferendis. Iure, quibusdam eveniet.",
+      "status": "Upcoming",
+      "contactInfo": "shelter@hopehome.org",
+      "division": "Chattogram"
+    }
+  ]
+  
