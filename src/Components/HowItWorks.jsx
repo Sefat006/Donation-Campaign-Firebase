@@ -53,9 +53,9 @@ const HowItWorks = () => {
           <p className="text-gray-600 text-lg mb-6">We operate across the following regions:</p>
           <div className="flex flex-wrap justify-center gap-4">
             {["Dhaka", "Chattogram", "Rajshahi", "Khulna", "Sylhet", "Barishal", "Mymensingh", "Rangpur"].map((division, index) => (
-              <span key={index} className="badge badge-primary text-lg px-4 py-2">
+              <Link key={index} className="badge badge-primary text-lg px-4 py-2">
                 {division}
-              </span>
+              </Link>
             ))}
           </div>
         </div>
