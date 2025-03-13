@@ -9,6 +9,7 @@ const Home = () => {
         // children of layout.JSX; will show on layout page <outlet></outlet>
         // after completing homepage; went to Donation.jsx to complete Donation page from Navbar
         <div className='m-6 bg-slate-50 '>
+            <h1 className='font-mono text-5xl font-bold text-gray-900 mb-10 py-5 md:text-7xl'>Home Layout</h1>
             <div className=''>
                 <Banner></Banner>
             </div>

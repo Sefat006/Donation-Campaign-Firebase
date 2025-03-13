@@ -19,6 +19,9 @@ const DonationDetails = () => {
     return (
         <div>
             {/* single donation details card*/}
+
+            <h1 className='text-2xl'>Donation Details of : <span className='text-blue-700 font-bold'> {title}</span></h1>
+
             <div className="mx-auto p-4 md:p-8 bg-gray-100 shadow-lg rounded-xl">
                 {/* title */}
                 <h1 className="text-6xl text-start mb-10 font-bold">{title}</h1>

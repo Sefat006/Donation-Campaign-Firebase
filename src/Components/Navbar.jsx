@@ -4,18 +4,18 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const lists = [
-        <li><NavLink>Home</NavLink></li>,
-        <li><NavLink to="/donation">Donation</NavLink></li>,
-        <li><NavLink>Campaigns</NavLink></li>,
-        <li><NavLink to="/how-to-help">How To Help</NavLink></li>,
-        <li><NavLink to="/dashboard">Dashboard</NavLink></li>,
-        
-    ]
+        <li><NavLink to="/" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>Home</NavLink></li>,
+        <li><NavLink to="/donation" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>Donation</NavLink></li>,
+        <li><NavLink to="/campaigns" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>Campaigns</NavLink></li>,
+        <li><NavLink to="/how-to-help" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>How To Help</NavLink></li>,
+        <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>Dashboard</NavLink></li>,
+    ];
+    
 
     return (
         <div>
             
-            <div className="navbar bg-base-100">
+            <div className="navbar rounded-lg bg-blue-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const Navbar = () => {
                         {lists}
                     </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn shadow-2xl rounded-md bg-white btn-ghost text-xl">Donation Campaign</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
                 {/* -- login button -- */}
                 <div className="navbar-end">
-                    <NavLink className="btn">Login</NavLink>
+                    <NavLink className="btn bg-blue-800 rounded-xl shadow-md text-white font-bold">Login</NavLink>
                 </div>
             </div>
 
