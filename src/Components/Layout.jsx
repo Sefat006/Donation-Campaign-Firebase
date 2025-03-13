@@ -5,6 +5,9 @@ import Footer from './Footer';
 
 const Layout = () => {
     return (
+
+        // 1st page to start with; then complete Home.jsx to fill the Homepage Layout
+
         <div className='flex flex-col min-h-screen'>
             <Navbar></Navbar>
             <div className='flex-grow'>

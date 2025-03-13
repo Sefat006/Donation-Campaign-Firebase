@@ -4,6 +4,7 @@ import Layout from '../Components/Layout';
 import ErrorPage from '../Components/ErrorPage';
 import Home from '../Components/Home';
 import Donation from '../Components/Donation';
+import DonationDetails from '../Components/DonationDetails';
 
 
 const router = createBrowserRouter([
@@ -19,11 +20,18 @@ const router = createBrowserRouter([
             {
                 path: '/donation',
                 element: <Donation></Donation>,
-                loader: ()=> fetch("../../public/donation.json")
+                loader: ()=> fetch('/donation.json')
             },
             {
-                path: '/campaign',
-                element: <h2>hey i am campaign page</h2>,
+                path: '/donation/:id',
+                element: <DonationDetails></DonationDetails>,
+                loader: async ({ params }) => {
+                    const response = await fetch("/donation.json"); // Load full JSON file
+                    const data = await response.json();
+                    
+                    return data.find(item => item.id === parseInt(params.id)) || null; // Find donation by ID
+                }
+                
             },
             {
                 path: '/how-to-help',

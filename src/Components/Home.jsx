@@ -5,6 +5,9 @@ import HowItWorks from './HowItWorks';
 
 const Home = () => {
     return (
+
+        // children of layout.JSX; will show on layout page <outlet></outlet>
+        // after completing homepage; went to Donation.jsx to complete Donation page from Navbar
         <div className='m-6 bg-slate-50 '>
             <div className=''>
                 <Banner></Banner>
