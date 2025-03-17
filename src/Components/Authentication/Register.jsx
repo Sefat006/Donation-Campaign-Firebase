@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Register = () => {
+
+  const { createNewUser, setUser } = useContext(AuthContext);
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+    // get form data
+    const form = new FormData(e.target);
+    const name = form.get("name");
+    const email = form.get("email");
+    const password = form.get("password");
+
+    console.log({name, email, password});
+
+    createNewUser(email,password)
+    .then((result) => {
+      const user = result.user;
+      setUser(user);
+  })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    })
+  }
+
+
     return (
         <div>
             <Navbar></Navbar>
@@ -15,7 +43,8 @@ const Register = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-6">
+          {/* form start */}
+          <form onSubmit={handleSubmit} action="#" method="POST" className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                 Enter Your Name

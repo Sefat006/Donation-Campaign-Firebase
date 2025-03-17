@@ -10,7 +10,7 @@ const CardDonation = ({ props }) => {
                
                     <img
                     src={image}
-                    alt="Movie" className="md:h-96 lg:h-60 h-full w-full" />
+                    alt="Movie" className="md:h-96 h-full w-full" />
                 <div className="card-body">
                     <h2 className="card-title text-start md:text-2xl">{title}</h2>
                     <p className='text-start'>

@@ -10,8 +10,8 @@ const Layout = () => {
 
         <div className='flex flex-col min-h-screen'>
             <Navbar></Navbar>
-            <div className='flex-grow'>
-            <Outlet></Outlet>
+            <div className='justify-center text-center flex-grow items-center w-11/12 mx-auto '>
+                <Outlet></Outlet>
             </div>
             <div  className="w-full">
                 <Footer></Footer>

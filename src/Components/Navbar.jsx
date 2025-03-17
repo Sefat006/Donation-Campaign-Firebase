@@ -1,7 +1,9 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
 
     const lists = [
         <li><NavLink to="/" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>Home</NavLink></li>,
@@ -11,7 +13,6 @@ const Navbar = () => {
         <li><NavLink to="/dashboard" className={({ isActive }) => isActive ? "bg-gray-100 font-bold" : ""}>Dashboard</NavLink></li>,
     ];
     
-
     return (
         <div>
             
@@ -47,7 +48,13 @@ const Navbar = () => {
                 </div>
                 {/* -- login button -- */}
                 <div className="navbar-end">
-                    <NavLink to="/login" className="btn bg-blue-800 rounded-xl shadow-md text-white font-bold">Login</NavLink>
+                    {
+                        user && user.email ? (
+                            <button onClick={logOut} className="btn bg-blue-800 rounded-xl shadow-md text-white font-bold">LogOut</button>
+                        ) : (
+                        <Link to="/login" className="btn bg-blue-800 rounded-xl shadow-md text-white font-bold">Login</Link>
+                        )}
+                    
                 </div>
             </div>
 
