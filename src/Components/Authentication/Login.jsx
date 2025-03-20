@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Login = () => {
+
+  const {userLogin, setUser} = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log(location);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log({email, password});
+
+
+    userLogin(email, password)
+    .then( (result) => {
+      setUser(result.user);
+      navigate(location?.state? location.state : '/')
+    })
+    .catch((error) => {
+      alert("your password is incorrect");
+    });
+  }
+
+
     return (
         <div>
             <Navbar></Navbar>
@@ -15,7 +41,9 @@ const Login = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-6">
+
+          {/* login form */}
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                 Email address

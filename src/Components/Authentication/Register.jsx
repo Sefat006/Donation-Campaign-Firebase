@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Register = () => {
 
-  const { createNewUser, setUser } = useContext(AuthContext);
+  const { createNewUser, setUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) =>{
     e.preventDefault();
@@ -23,6 +24,10 @@ const Register = () => {
     .then((result) => {
       const user = result.user;
       setUser(user);
+      updateUserProfile({displayName: name, email: email})
+      then( ()=> {
+        navigate('/');
+      })
   })
     .catch((error) => {
       const errorCode = error.code;

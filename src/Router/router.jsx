@@ -7,6 +7,9 @@ import Donation from '../Components/Donation';
 import DonationDetails from '../Components/DonationDetails';
 import Login from '../Components/Authentication/Login';
 import Register from '../Components/Authentication/Register';
+import PrivateRoute from './PrivateRoute';
+
+
 
 
 const router = createBrowserRouter([
@@ -26,7 +29,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/donation/:id',
-                element: <DonationDetails></DonationDetails>,
+                element: <PrivateRoute>
+                        <DonationDetails></DonationDetails>
+                    </PrivateRoute>,
                 loader: async ({ params }) => {
                     const response = await fetch("/donation.json"); // Load full JSON file
                     const data = await response.json();
