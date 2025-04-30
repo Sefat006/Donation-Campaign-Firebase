@@ -6,3 +6,5 @@
 * DaisyUI
 * Firebase
 
+# Live Link 
+https://dynamic-kringle-fedde5.netlify.app/
